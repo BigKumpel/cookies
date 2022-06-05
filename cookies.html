@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+    <style>
+    #cookie-container {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: black;
+        color: white;
+        padding: 24px;
+    }
+
+    #cookie-container a {
+        color: blue;
+    }
+
+    #cookie-btn {
+        background-color: red;
+        color: white;
+        padding: 10px 24px;
+    }
+    </style>
+</head>
+<body onLoad>
+    <div id="cookie-container">
+        <p>
+            Ta strona wykorzystuje pliki cookies w celu zapewnienia świadczenia usług na najwyższym poziomie. 
+            W każdym momencie można zmienić ustawienia przeglądarki internetowej. 
+            Więcej informacji na temat plików cookies można się do wiedzieć na tej stronie: <a href="#">polityka prywatności.</a>
+        </p>
+
+        <button id="cookie-btn">Akceptuje</button>
+    </div>
+    <script>
+        const container = document.querySelector("#cookie-container");
+        const btn = document.querySelector("#cookie-btn");
+
+        btn.addEventListener("click", function display() {
+        document.getElementById("cookie-container").style.display = "none";
+        });
+    </script>
+</body>
+</html>
