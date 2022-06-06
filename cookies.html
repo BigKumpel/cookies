@@ -5,29 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cookies</title>
-    <style>
-    #cookie-container {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: black;
-        color: white;
-        padding: 24px;
-    }
-
-    #cookie-container a {
-        color: blue;
-    }
-
-    #cookie-btn {
-        background-color: red;
-        color: white;
-        padding: 10px 24px;
-    }
-    </style>
 </head>
-<body onLoad>
+<body onLoad="display()">
     <div id="cookie-container">
         <p>
             Ta strona wykorzystuje pliki cookies w celu zapewnienia świadczenia usług na najwyższym poziomie. 
@@ -45,5 +24,26 @@
         document.getElementById("cookie-container").style.display = "none";
         });
     </script>
+    <style>
+        #cookie-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: black;
+            color: white;
+            padding: 24px;
+        }
+    
+        #cookie-container a {
+            color: blue;
+        }
+    
+        #cookie-btn {
+            background-color: red;
+            color: white;
+            padding: 10px 24px;
+        }
+        </style>
 </body>
 </html>
